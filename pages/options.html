@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title id=optionsTitle></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <style>
+    #content {
+      background-color: white;
+      border: 4px solid #B5C7DE;
+      border-radius: 12px;
+      margin: 40px auto 20px;
+      padding: 8px;
+      width: 600px;
+    }
+    .option_row {
+      clear: left;
+      padding: 2.5em 1em 0;
+      text-align:center
+    }
+    #status {
+      background-color: rgb(255, 241, 168);
+      display: none;
+      margin-left: 3px;
+      padding: 1px 2px;
+      text-align: center;
+      font-size: 15px;
+      color: #000;
+    }
+    #multiCalendarText {
+      font-size: 15px;
+      color: #000;
+    }
+    body {
+      background-color: "#ebeff9";
+    }
+    #logo {
+      font-size: 20px;
+      text-align: center;
+    }
+    #extensionName {
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <div id="content">
+    <div class="option_row">
+      <div>
+        <table cellpadding=1 width=100%>
+          <tr>
+            <td width="5%">&nbsp;</td>
+            <td>开关快捷键(Switch shortcuts): <input id="SWITCH_HOTKEY" readonly=""></td>
+            <td width="25%">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="5%">&nbsp;</td>
+            <td>语言(Language): 
+              <select id="SWITCH_TL">
+                <option value=zh-CN>中文(简体zh-CN)</option>
+                <option value=zh-TW>中文(繁体zh-TW)</option>
+                <option value=sq>阿尔巴尼亚语(sq)</option>
+                <option value=ar>阿拉伯语(ar)</option>
+                <option value=az>阿塞拜疆语(az)</option>
+                <option value=ga>爱尔兰语(ga)</option>
+                <option value=et>爱沙尼亚语(et)</option>
+                <option value=eu>巴斯克语(eu)</option>
+                <option value=be>白俄罗斯语(be)</option>
+                <option value=bg>保加利亚语(bg)</option>
+                <option value=is>冰岛语(is)</option>
+                <option value=pl>波兰语(pl)</option>
+                <option value=bs>波斯尼亚语(bs)</option>
+                <option value=fa>波斯语(fa)</option>
+                <option value=af>布尔语(南非荷兰语af)</option>
+                <option value=da>丹麦语(da)</option>
+                <option value=de>德语(de)</option>
+                <option value=ru>俄语(ru)</option>
+                <option value=fr>法语(fr)</option>
+                <option value=tl>菲律宾语(tl)</option>
+                <option value=fi>芬兰语(fi)</option>
+                <option value=km>高棉语(km)</option>
+                <option value=ka>格鲁吉亚语(ka)</option>
+                <option value=gu>古吉拉特语(gu)</option>
+                <option value=ht>海地克里奥尔语(ht)</option>
+                <option value=ko>韩语(ko)</option>
+                <option value=ha>豪萨语(ha)</option>
+                <option value=nl>荷兰语(nl)</option>
+                <option value=gl>加利西亚语(gl)</option>
+                <option value=ca>加泰罗尼亚语(ca)</option>
+                <option value=cs>捷克语(cs)</option>
+                <option value=kn>卡纳达语(kn)</option>
+                <option value=hr>克罗地亚语(hr)</option>
+                <option value=la>拉丁语(la)</option>
+                <option value=lv>拉脱维亚语(lv)</option>
+                <option value=lo>老挝语(lo)</option>
+                <option value=lt>立陶宛语(lt)</option>
+                <option value=ro>罗马尼亚语(ro)</option>
+                <option value=mt>马耳他语(mt)</option>
+                <option value=mr>马拉地语(mr)</option>
+                <option value=ms>马来语(ms)</option>
+                <option value=mk>马其顿语(mk)</option>
+                <option value=mi>毛利语(mi)</option>
+                <option value=mn>蒙古语(mn)</option>
+                <option value=bn>孟加拉语(bn)</option>
+                <option value=hmn>苗语(hmn)</option>
+                <option value=zu>南非祖鲁语(zu)</option>
+                <option value=ne>尼泊尔语(ne)</option>
+                <option value=no>挪威语(no)</option>
+                <option value=pa>旁遮普语(pa)</option>
+                <option value=pt>葡萄牙语(pt)</option>
+                <option value=ja>日语(ja)</option>
+                <option value=sv>瑞典语(sv)</option>
+                <option value=sr>塞尔维亚语(sr)</option>
+                <option value=eo>世界语(eo)</option>
+                <option value=sk>斯洛伐克语(sk)</option>
+                <option value=sl>斯洛文尼亚语(sl)</option>
+                <option value=sw>斯瓦希里语(sw)</option>
+                <option value=ceb>宿务语(ceb)</option>
+                <option value=so>索马里语(so)</option>
+                <option value=te>泰卢固语(te)</option>
+                <option value=ta>泰米尔语(ta)</option>
+                <option value=th>泰语(th)</option>
+                <option value=tr>土耳其语(tr)</option>
+                <option value=cy>威尔士语(cy)</option>
+                <option value=ur>乌尔都语(ur)</option>
+                <option value=uk>乌克兰语(uk)</option>
+                <option value=iw>希伯来语(iw)</option>
+                <option value=el>希腊语(el)</option>
+                <option value=es>西班牙语(es)</option>
+                <option value=hu>匈牙利语(hu)</option>
+                <option value=hy>亚美尼亚语(hy)</option>
+                <option value=ig>伊博语(ig)</option>
+                <option value=it>意大利语(it)</option>
+                <option value=yi>意第绪语(yi)</option>
+                <option value=hi>印地语(hi)</option>
+                <option value=id>印尼语(id)</option>
+                <option value=jw>印尼爪哇语(jw)</option>
+                <option value=en>英语(en)</option>
+                <option value=yo>约鲁巴语(yo)</option>
+                <option value=vi>越南语(vi)</option>
+              </select>
+            </td>
+            <td width="25%">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="5%">&nbsp;</td>
+            <td></td>
+            <td width="25%"><input type="button" id="SAVE_BUTTON" value="保存(Save)" ></td>
+          </tr>
+        </table>
+        <br>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../js/options.js"></script>
+</html>
